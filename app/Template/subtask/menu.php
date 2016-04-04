@@ -7,5 +7,7 @@
         <li>
             <?= $this->url->link(t('Remove'), 'subtask', 'confirm', array('task_id' => $task['id'], 'project_id' => $task['project_id'], 'subtask_id' => $subtask['id']), false, 'popover') ?>
         </li>
+
+        <?= $this->hook->render('template:subtask:menu') ?>
     </ul>
 </div>
